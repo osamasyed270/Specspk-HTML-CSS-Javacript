@@ -1,0 +1,30 @@
+.main-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 0 5px 0 5px;
+
+    .left-side-container {
+        width: 100%;
+
+        .ratings-container {
+            width: 100%;
+            overflow: hidden;
+            padding: 0;
+            margin: 5px 0 10px 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .rankings {
+            margin: 10px 0 0 0;
+            flex-shrink: 2;
+            
+            }
+        }
+    }
+    .page-details {
+        width: 100%;
+        flex-grow: inherit;
+        margin: auto;
+    }
+}

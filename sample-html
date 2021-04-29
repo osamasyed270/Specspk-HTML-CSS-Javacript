@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Mobiles</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTAWESOME JAVASCRIPT FILE -->
+    <script src="https://kit.fontawesome.com/9f23711fbd.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="../sass/all-mobiles-page-scss/all-mobiles.css">
+
+    <!-- JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER START -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+         crossorigin="anonymous">
+        </script>
+        
+    <script>
+        $(function () {
+            $("#header").load("../header_search_footer_etc-html/header.html");
+        });
+        $(function () {
+            $("#menu").load("../header_search_footer_etc-html/menu-bar.html");
+        });
+        $(function () {
+            $("#search-box").load("../header_search_footer_etc-html/search-box.html");
+        });
+        $(function () {
+            $(".left-container-bottom").load("../header_search_footer_etc-html/left-side-container.html");
+        });
+
+    </script>
+    <!-- /// JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER END -->
+
+</head>
+<body>
+    <!-- HEADER START -->
+    <header id="header">
+
+    </header>
+    <!-- /// HEADER END -->
+
+    <!-- MENU-BAR START -->
+    <div class="menu" id="menu">
+
+    </div>
+    <!-- /// MENU-BAR END -->
+
+    <!-- SEARCH BOX START -->
+    <div class="search-box" id="search-box">
+
+    </div>
+    <!-- /// SEARCH BOX END -->
+
+    <!-- ALL MOBILES CONTENT CONTAINER START -->
+    <div class="all-mobiles-container main-container">
+        <!-- LEFT SIDE CONTAINER START -->
+        <div class="left-side-container">
+
+            <div class="ratings-container">
+                <!-- i used javascript file to insert the rating content here (src of javascript file (src="./javascript/left-side-container.js")) -->
+            </div>
+
+            <div class="left-container-bottom">
+
+            </div>
+
+        </div>
+        <!-- /// LEFT SIDE CONTAINER END -->
+
+        <!-- ALL MOBILES RIGHT SIDE CONTAINER START -->
+        <div class="all-mobiles-details page-details">
+
+        </div>
+        <!-- /// ALL MOBILES RIGHT SIDE CONTAINER END -->
+    </div>
+    <!-- /// ALL MOBILES CONTENT CONTAINER END -->
+
+
+
+    <!-- JAVASCRIPT FOR RATINGS CONTAINER -->
+    <script src="../javascript/left-side-container.js"></script>
+    
+</body>
+</html>

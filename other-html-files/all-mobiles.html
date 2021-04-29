@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Mobiles</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTAWESOME JAVASCRIPT FILE -->
+    <script src="https://kit.fontawesome.com/9f23711fbd.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="../sass/all-mobiles-page-scss/all-mobiles.css">
+    
+
+    <!-- JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER START -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+         crossorigin="anonymous">
+        </script>
+        
+    <script>
+        $(function () {
+            $("#header").load("../header_search_footer_etc-html/header.html");
+        });
+        $(function () {
+            $("#menu").load("../header_search_footer_etc-html/menu-bar.html");
+        });
+        $(function () {
+            $(".left-container-bottom").load("../header_search_footer_etc-html/left-side-container.html");
+        });
+
+    </script>
+    <!-- /// JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER END -->
+
+</head>
+<body>
+    <!-- HEADER START -->
+    <header id="header">
+
+    </header>
+    <!-- /// HEADER END -->
+
+    <!-- MENU-BAR START -->
+    <div class="menu" id="menu">
+
+    </div>
+    <!-- /// MENU-BAR END -->
+
+    <!-- SEARCH BOX START -->
+    <div class="search-box" id="search-box">
+        <div class="search-top">
+            <div id="crossbtn-search">
+                <i class="fa fa-times close-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <input type="search" placeholder="Search Mobile..." id="myInput" onkeyup="searchMobiles()">
+        
+        <ul id="myUL">
+            
+        </ul>
+    </div>
+    <!-- /// SEARCH BOX END -->
+
+    <!-- ALL MOBILES CONTENT CONTAINER START -->
+    <div class="all-mobiles-container main-container">
+        <!-- LEFT SIDE CONTAINER START -->
+        <div class="left-side-container">
+
+            <div class="ratings-container">
+                <!-- i used javascript file to insert the rating content here (src of javascript file (src="./javascript/left-side-container.js")) -->
+            </div>
+
+            <div class="left-container-bottom">
+
+            </div>
+
+        </div>
+        <!-- /// LEFT SIDE CONTAINER END -->
+
+        <!-- ALL MOBILES RIGHT SIDE CONTAINER START -->
+        <div class="all-mobiles-details page-details">
+            <div class="all-mobiles-title">
+                <h2>ALL MOBILES</h2>
+            </div>
+            <div class="filter-btn-container">
+                <button class="filter-btn" type="button" data-id="all">all</button>
+                <button class="filter-btn" type="button" data-id="samsung">samsung</button>
+                <button class="filter-btn" type="button" data-id="apple">apple</button>
+                <button class="filter-btn" type="button" data-id="huawei">huawei</button>
+                <button class="filter-btn" type="button" data-id="oppo">oppo</button>
+                <button class="filter-btn" type="button" data-id="lg">lg</button>
+                <button class="filter-btn" type="button" data-id="tecno">tecno</button>
+                <button class="filter-btn" type="button" data-id="infinix">infinix</button>
+                <button class="filter-btn" type="button" data-id="alcatel">alcatel</button>
+            </div>
+
+            <div class="all-mobiles">
+                <div class="mobile">
+                    <a href="#">
+                        <div class="mobile-top">
+                            <img src="../mobiles-images/SamsungGalaxyS20FE-s.jpg" alt="">
+                        </div>
+                        <div class="mobile-mid">
+                            <p>Samsung<br>Galaxy S20 FE</p>
+                        </div>
+                        <div class="mobile-bottom">
+                            <p class="price">Rs. 119,999</p>
+                        </div>
+                    </a>
+
+                    <div class="mini-specs">
+                        <div class="title">
+                            <p>Mini Specifications</p>
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>RAM:</th>
+                                    <td>8GB RAM</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage:</th>
+                                    <td>128GB Built-in</td>
+                                </tr>
+                                <tr>
+                                    <th>Camera:</th>
+                                    <td>12MP, 8MP, 12MP</td>
+                                </tr>
+                                <tr>
+                                    <th>Display:</th>
+                                    <td>1440x2400 Pixels</td>
+                                </tr>
+                                <tr>
+                                    <th>Battery:</th>
+                                    <td>4500 mAh</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <div class="mini-specs-bottom">
+                            <a href="#">Full Specifications</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- /// ALL MOBILES RIGHT SIDE CONTAINER END -->
+    </div>
+    <!-- /// ALL MOBILES CONTENT CONTAINER END -->
+
+
+    <!-- CUSTOM JAVASCRIPT FOR SEARCH BOX -->
+    <script src="/javascript/search-box.js"></script>
+
+    <!-- JAVASCRIPT FOR RATINGS CONTAINER -->
+    <script src="/javascript/left-side-container.js"></script>
+
+    <!-- JAVASCRIPT FOR ALL MOBILES -->
+    <script src="/javascript/all-mobiles.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,409 @@
+// GOOGLE FONTS START
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap");
+// ---- GOOGLE FONTS END
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: #f0f2f5;
+}
+
+.price {
+    font-family: "Roboto", sans-serif;
+}
+
+@import "../header-menubar";
+
+@import "../search-box";
+
+@import "../left-side-container";
+
+.home-details {
+    .big-img-slider {
+        position: relative;
+        width: 100%;
+        margin-top: 1rem;
+        overflow: hidden;
+
+        .big-img-next {
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            font-size: 1.4rem;
+            color: #ffffff;
+            z-index: 1001;
+            cursor: pointer;
+        }
+
+        .big-img-prev {
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            font-size: 1.4rem;
+            color: #ffffff;
+            z-index: 1001;
+            cursor: pointer;
+        }
+
+        .slider {
+            width: 100%;
+            height: 40rem;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            outline: none;
+
+            .slide {
+                width: 100%;
+                height: 40rem;
+                display: inline-block;
+                overflow: hidden;
+                outline: none;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1.5rem;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .lm-b-etc-container {
+        .lm-b-etc-item {
+            background: #ffffff;
+            margin-top: 2rem;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            color: #313131;
+            height: 30rem;
+
+            .top {
+                background: #c1c1c1;
+                height: 6rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 3rem;
+
+                .title {
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 3rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #313131;
+                    font-size: 1.5rem;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    color: #0e352e;
+                }
+            }
+
+            .bottom {
+                position: relative;
+                height: 24rem;
+                font-size: 1.6rem;
+
+                .next {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 2.5rem;
+                    width: 7%;
+                    height: 24rem;
+                    background: #e1e1e1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+                .prev {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 2.5rem;
+                    width: 7%;
+                    height: 24rem;
+                    background: #e1e1e1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                .post-slider {
+                    width: 86%;
+                    height: 100%;
+                    margin: 0 auto;
+                    padding: 0 0.5rem;
+                    overflow: hidden;
+
+                    .post {
+                        border: 0.1rem solid #b9b9b9;
+                        width: 16rem;
+                        height: 21.5rem;
+                        margin: 1.3rem 0.7rem;
+                        border-radius: 0.5rem;
+                        display: inline-block;
+                        overflow: hidden;
+                        position: relative;
+                        outline: none;
+
+                        a {
+                            text-decoration: none;
+
+                            .post-top {
+                                width: 100%;
+                                height: 13rem;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
+                                    height: 11rem;
+                                }
+                            }
+
+                            .post-mid {
+                                border-top: 0.1rem solid #b9b9b9;
+                                border-bottom: 0.1rem solid #b9b9b9;
+                                width: 100%;
+                                height: 4.25rem;
+                                color: #165348;
+                                text-align: center;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                overflow: hidden;
+                            }
+
+                            .post-bottom {
+                                width: 100%;
+                                height: 4.25rem;
+                                font-weight: 500;
+                                color: #313131;
+                                text-align: center;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                .latest-mobile-slider {
+                    .post {
+                        .mini-specs {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(255, 255, 255, 1);
+                            text-decoration: none;
+                            color: #313131;
+                            transform: scale(1.2);
+                            opacity: 0;
+                            transition: all 0.3s;
+
+                            .title {
+                                width: 90%;
+                                font-size: 1.6rem;
+                                text-align: center;
+                                margin: auto;
+                                padding: 0.6rem 0 0.6rem 0;
+                                font-weight: 400;
+                                color: #165348;
+                                border-bottom: 0.1rem solid #b9b9b9;
+                                pointer-events: none;
+                            }
+
+                            table {
+                                width: 90%;
+                                margin: auto;
+                                margin-top: 0.6rem;
+                                font-size: 1.3rem;
+                                border-collapse: collapse;
+                                pointer-events: none;
+
+                                tbody {
+                                    tr {
+                                        th {
+                                            color: #165348;
+                                            font-weight: 400;
+                                            text-align: left;
+                                            height: 2.5rem;
+                                        }
+                                        td {
+                                            font-weight: 400;
+                                            padding-left: 0.5rem;
+                                            height: 2.5rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .mini-specs-bottom {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 5rem;
+
+                                a {
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    color: #165348;
+                                    font-size: 1.3rem;
+                                    border: 0.1rem solid #165348;
+                                    padding: 0.5rem 0.7rem;
+                                    border-radius: 2rem;
+                                    transition: 0.3s;
+                                    outline: none;
+                                }
+
+                                a:hover {
+                                    color: #ffffff;
+                                    background: #165348;
+                                }
+                            }
+                        }
+                    }
+
+                    .post:hover .mini-specs {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+
+                .latest-news-slider {
+                    .post {
+                        a {
+                            .post-top {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .post-mid {
+                                text-align: left;
+                                justify-content: start;
+                                align-items: flex-start;
+                                padding-left: 0.2rem;
+                            }
+                        }
+                    }
+                }
+
+                .brands-slider {
+                    .post {
+                        a {
+                            .post-top {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1281px) {
+    .home-details {
+        width: 500px;
+
+        .big-img-slider {
+            width: 933px;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 56.9%;
+    }
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 41.7%;
+    }
+}
+
+@media (max-width: 600px) {
+    @import "../600px-header-menu-search-footer";
+    @import "../600px-left-side-container";
+    .home-details {
+        .big-img-slider {
+            margin-top: 20px;
+
+            .big-img-next {
+                top: 46%;
+                font-size: 15px;
+            }
+
+            .big-img-prev {
+                top: 46%;
+                font-size: 15px;
+            }
+
+            .slider {
+                height: auto;
+    
+                .slide {
+                    height: auto;
+    
+                    img {
+                        object-fit: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    @import "../425px-header-menu-search-footer";
+    @import "../425px-left-side-container";
+    .home-details {
+        .lm-b-etc-container {
+            .lm-b-etc-item {
+                .bottom {
+                    .next {
+                        width: 9%;
+                    }
+                    .prev {
+                        width: 9%;
+                    }
+
+                    .post-slider {
+                        width: 82%;
+                    }
+                }
+            }
+        }
+    }
+}

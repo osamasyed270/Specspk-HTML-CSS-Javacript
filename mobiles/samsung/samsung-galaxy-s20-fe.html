@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Mobiles</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTAWESOME JAVASCRIPT FILE -->
+    <script src="https://kit.fontawesome.com/9f23711fbd.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="/sass/mobiles-pages-scss/mobile.css">
+
+    <!-- JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER START -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $("#header").load("/header_search_footer_etc-html/header.html");
+        });
+        $(function () {
+            $("#menu").load("/header_search_footer_etc-html/menu-bar.html");
+        });
+        $(function () {
+            $(".left-container-bottom").load("/header_search_footer_etc-html/left-side-container.html");
+        });
+
+    </script>
+    <!-- /// JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER END -->
+
+</head>
+
+<body onload="result()">
+    <!-- HEADER START -->
+    <header id="header">
+
+    </header>
+    <!-- /// HEADER END -->
+
+    <!-- MENU-BAR START -->
+    <div class="menu" id="menu">
+
+    </div>
+    <!-- /// MENU-BAR END -->
+
+    <!-- SEARCH BOX START -->
+    <div class="search-box" id="search-box">
+        <div class="search-top">
+            <div id="crossbtn-search">
+                <i class="fa fa-times close-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <input type="search" placeholder="Search Mobile..." id="myInput" onkeyup="searchMobiles()">
+
+        <ul id="myUL">
+
+        </ul>
+    </div>
+    <!-- /// SEARCH BOX END -->
+
+    <!-- ALL MOBILES CONTENT CONTAINER START -->
+    <div class="mobile-container main-container">
+        <!-- LEFT SIDE CONTAINER START -->
+        <div class="left-side-container">
+
+            <div class="ratings-container">
+                <!-- i used javascript file to insert the rating content here (src of javascript file (src="./javascript/left-side-container.js")) -->
+            </div>
+
+            <div class="left-container-bottom">
+
+            </div>
+
+        </div>
+        <!-- /// LEFT SIDE CONTAINER END -->
+
+        <!-- ALL MOBILES RIGHT SIDE CONTAINER START -->
+        <div class="mobile-details page-details">
+            <div class="mobile-details-top">
+                <div class="mobile-name price">Samsung Galaxy S20 FE</div>
+                <div class="price-container">
+                    <div>Rs. <span class="price">119,999</span><span>119999</span></div>
+                    <div>USD $<span class="price"></span></div>
+                </div>
+            </div>
+
+            <div class="mobile-main">
+                <div class="mobile-main-left">
+                    <div class="big-img-container">
+                        <i class="fas fa-arrow-left mobile-big-img-prev"></i>
+                        <i class="fas fa-arrow-right mobile-big-img-next"></i>
+                        <ul class="big-img-slider">
+                            <li class="slide-item"><img src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-1.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                            <li class="slide-item"><img src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-2.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                            <li class="slide-item"><img src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-3.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                            <li class="slide-item"><img src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-4.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                        </ul>
+                    </div>
+                    <div class="small-img-conainer">
+                        <!-- <i class="fas fa-arrow-left mobile-small-img-prev"></i>
+                        <i class="fas fa-arrow-right mobile-small-img-next"></i> -->
+                        <ul class="small-img-slider">
+                            <li class="thumbnail-item"><img
+                                    src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-1.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                            <li class="thumbnail-item"><img
+                                    src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-2.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                            <li class="thumbnail-item"><img
+                                    src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-3.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                            <li class="thumbnail-item"><img
+                                    src="/mobiles-images/samsung/samsung-galaxy-s20-fe/image-4.jpg"
+                                    alt="Samsung-Galaxy-S20-FE"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-main-right">
+                    <div class="mini-specifications">
+                        <div class="mini-specs-item">
+                            <div><img src="/svg/ram.svg" alt=""></div>
+                            <div>8GB</div>
+                            <div>RAM</div>
+                        </div>
+                        <div class="mini-specs-item">
+                            <div><img src="/svg/rom.svg" alt=""></div>
+                            <div>128GB</div>
+                            <div>Storage</div>
+                        </div>
+                        <div class="mini-specs-item">
+                            <div><img src="/svg/processor.svg" alt=""></div>
+                            <div>Snapdragon 865</div>
+                            <div>Processor</div>
+                        </div>
+                        <div class="mini-specs-item">
+                            <div><img src="/svg/backcamera.svg" alt=""></div>
+                            <div>12MP+8MP+12MP</div>
+                            <div>Back Camera</div>
+                        </div>
+                        <div class="mini-specs-item">
+                            <div><img src="/svg/display.svg" alt=""></div>
+                            <div>6.5 inches</div>
+                            <div>Display</div>
+                        </div>
+                        <div class="mini-specs-item">
+                            <div><img src="/svg/battery.svg" alt=""></div>
+                            <div>4500 mAh</div>
+                            <div>Battery</div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-review-section">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RmctgVMppiA" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- /// ALL MOBILES RIGHT SIDE CONTAINER END -->
+    </div>
+    <!-- /// ALL MOBILES CONTENT CONTAINER END -->
+
+
+    <!-- CUSTOM JAVASCRIPT FOR SEARCH BOX -->
+    <script src="/javascript/search-box.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT FOR RATINGS CONTAINER -->
+    <script src="/javascript/left-side-container.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT FOR MOBILE SPECIFICATION PAGE -->
+    <script src="/javascript/mobile-specs-page.js"></script>
+
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>

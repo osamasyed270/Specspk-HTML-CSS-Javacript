@@ -1,0 +1,182 @@
+header {
+    width: 100%;
+    height: 10rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    z-index: 1090;
+
+    .logo {
+        a {
+            img {
+                width: 18.1rem;
+            }
+        }
+    }
+    .header-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social-media {
+            width: 16rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 2rem;
+            position: relative;
+            font-size: 15px;
+            border: 1px solid  #165348;
+            border-radius: 4px;
+
+            .social-media-heading {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 10px;
+                cursor: pointer;
+                transition: .3s;
+                user-select: none;
+            }
+
+            .social-media-heading:hover {
+                background: #165348;
+                color: #ffffff;
+            }
+
+            ul {
+                position: absolute;
+                width: 100%;
+                top: 102%;
+                left: 0;
+                z-index: 10000000;
+                overflow: hidden;
+                background: #ffffff;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                transition: height .3s;
+                border-right: 1px solid #165348;
+                border-left: 1px solid #165348;
+                height: 0px;
+                li {
+                    list-style: none;
+                    width: 100%;
+                    height: 38px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        text-decoration: none;
+                        color: #000000;
+                        width: 100%;
+                        height: 100%;
+                        transition: .3s;
+                    }
+
+                    a:hover {
+                        background: #165348;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .show-social-media-names {
+                border: 1px solid #165348;
+                height: 154px;
+            }
+        }
+
+        .search-menu-btn {
+            width: 10rem;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+
+            .fa {
+                font-size: 2.5rem;
+                width: 4rem;
+                height: 4rem;
+                background: #e1e1e1;
+                text-align: center;
+                line-height: 4rem;
+                border-radius: 5rem;
+                cursor: pointer;
+            }
+        }
+
+        .login-signup-btns {
+            display: flex;
+
+            p {
+                border: 0.1rem solid #165348;
+                padding: 1rem 2rem;
+                border-radius: 0.4rem;
+                font-size: 1.4rem;
+                cursor: pointer;
+                background: #ffffff;
+                transition: 0.3s;
+                user-select: none;
+            }
+    
+            p:hover {
+                color: #ffffff;
+                background: #165348;
+            }
+    
+            p:nth-of-type(1) {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+}
+
+.menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #165348;
+    z-index: 1100;
+
+    .side-menu-top {
+        display: none;
+    }
+
+    .menu-mid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        a {
+            color: #ffffff;
+            background: #165348;
+            display: inline-block;
+            height: 5rem;
+            flex: 50%;
+            font-size: 1.6rem;
+            text-decoration: none;
+            text-align: center;
+            line-height: 5rem;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: #ffffff;
+            background: #0e352e;
+        }
+    }
+
+    .menu-bottom {
+        display: none;
+    }
+}

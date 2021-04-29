@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecsPk - Home</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONTAWESOME JAVASCRIPT FILE -->
+    <script src="https://kit.fontawesome.com/9f23711fbd.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="./sass/home-sass/home.css">
+
+
+
+    <!-- JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER START -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+         crossorigin="anonymous">
+        </script>
+        
+    <script>
+        $(function () {
+            $("#header").load("./header_search_footer_etc-html/header.html");
+        });
+        $(function () {
+            $("#menu").load("./header_search_footer_etc-html/menu-bar.html");
+        });
+        $(function () {
+            $(".left-container-bottom").load("./header_search_footer_etc-html/left-side-container.html");
+        });
+
+    </script>
+    <!-- /// JAVASCRIPT FOR HEADER, SEARCH-BOX, LEFT SIDE CONTENT IN CONTENT AREA, AND FOOTER END -->
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header id="header">
+
+    </header>
+    <!-- /// HEADER END -->
+
+    <!-- MENU-BAR START -->
+    <div class="menu" id="menu">
+
+    </div>
+    <!-- /// MENU-BAR END -->
+
+    <!-- SEARCH BOX START -->
+    <div class="search-box" id="search-box">
+        <div class="search-top">
+            <div id="crossbtn-search">
+                <i class="fa fa-times close-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <input type="search" placeholder="Search Mobile..." id="myInput" onkeyup="searchMobiles()">
+        
+        <ul id="myUL">
+            
+        </ul>
+    </div>
+    <!-- /// SEARCH BOX END -->
+
+    <!-- HOME CONTENT CONTAINER START -->
+    <div class="home-container main-container">
+        <!-- LEFT SIDE CONTAINER START -->
+        <div class="left-side-container">
+
+            <div class="ratings-container">
+                <!-- i used javascript file to insert the rating content here (src of javascript file (src="./javascript/left-side-container.js")) -->
+            </div>
+
+            <div class="left-container-bottom">
+
+            </div>
+
+        </div>
+        <!-- /// LEFT SIDE CONTAINER END -->
+
+        <!-- HOME RIGHT SIDE CONTAINER START -->
+        <div class="home-details page-details">
+            <!-- BIG IMAGE SLIDER START -->
+            <div class="big-img-slider">
+                <i class="fas fa-chevron-left big-img-prev"></i>
+                <i class="fas fa-chevron-right big-img-next"></i>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./images/iphone-12-pro-concept.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/s20.0.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/huawei_p30_pro_and_p30_1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /// BIG IMAGE SLIDER END -->
+
+            <!-- THIS SECTION CONTAINS ALL CONTAINERS (LATEST MOBILE CONTAINER, BRANDS CONTAINER, LATEST NEWS CONTAINER) -->
+            <div class="lm-b-etc-container">
+                <!-- LATEST MOBILE CONTAINER START -->
+                <div class="lm-b-etc-item">
+                    <div class="top">
+                        <p class="title">Latest Mobiles:</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="bottom">
+                        <i class="fas fa-chevron-left prev latest-mobile-prev"></i>
+                        <i class="fas fa-chevron-right next latest-mobile-next"></i>
+                        <div class="post-slider latest-mobile-slider">
+                            <div class="post">
+                                <a href="#">
+                                <a href="#">
+                                    <div class="post-top">
+                                        <img src="./mobiles-images/SamsungGalaxyS20FE-s.jpg" alt="">
+                                    </div>
+                                    <div class="post-mid">
+                                        <p>Samsung<br>Galaxy S20 FE</p>
+                                    </div>
+                                    <div class="post-bottom">
+                                        <p class="price">Rs. 119,999</p>
+                                    </div>
+                                </a>
+                                
+                                <div class="mini-specs">
+                                    <div class="title">
+                                        <p>Mini Specifications</p>
+                                    </div>
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>RAM</th>
+                                                <td>6/8GB RAM</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="mini-specs-bottom">
+                                        <a href="#">Full Specifications</a>
+                                    </div>
+
+                                </div>
+                                </a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /// LATEST MOBILE CONTAINER END -->
+
+                <!-- LATEST NEWS CONTAINER START -->
+                <div class="lm-b-etc-item">
+                    <div class="top">
+                        <p class="title">Latest News:</p>
+                        <a href="#">more...</a>
+                    </div>
+                    <div class="bottom">
+                        <i class="fas fa-chevron-left prev latest-news-prev"></i>
+                        <i class="fas fa-chevron-right next latest-news-next"></i>
+                        <div class="post-slider latest-news-slider">
+                            <div class="post" title="Realme Ace to Feature Snapdragon 875 and ....">
+                                <a href="#">
+                                    <div class="post-top">
+                                        <img src="./images/d36f592f2a85d628427ffad805a22af6_thumb.jpg" alt="">
+                                    </div>
+                                    <div class="post-mid">
+                                        <p>Realme Ace to Feature Snapdragon 875 and ....</p>
+                                    </div>
+                                    <div class="post-bottom">
+                                        <p class="price">December 5,2020</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- /// LATEST NEWS CONTAINER END -->
+
+                <!-- BRANDS CONTAINER START -->
+                <div class="lm-b-etc-item">
+                    <div class="top">
+                        <p class="title">Brands:</p>
+                        <a href="#">more...</a>
+                    </div>
+                    <div class="bottom">
+                        <i class="fas fa-chevron-left prev brands-prev"></i>
+                        <i class="fas fa-chevron-right next brands-next"></i>
+                        <div class="post-slider brands-slider">
+                            <div class="post">
+                                <a href="#">
+                                    <div class="post-top">
+                                        <img src="./images/apple-iphone-12-pro-max-3.jpg" alt="">
+                                    </div>
+                                    <div class="post-mid">
+                                        <p>Apple (IPhone)</p>
+                                    </div>
+                                    <div class="post-bottom">
+                                        <p class="price">20 Mobiles</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /// BRANDS CONTAINER END -->
+            </div>
+            <!-- /// THIS SECTION CONTAINS ALL CONTAINERS (LATEST MOBILE CONTAINER, BRANDS CONTAINER, LATEST NEWS CONTAINER) -->
+
+        </div>
+        <!-- /// HOME RIGHT SIDE CONTAINER END -->
+    </div>
+
+    <div id="syed"></div>
+    <!-- /// HOME CONTENT CONTAINER END -->
+
+
+    <!-- CUSTOM JAVASCRIPT FOR SEARCH BOX -->
+    <script src="/javascript/search-box.js"></script>
+
+    <!-- JAVASCRIPT FOR RATINGS CONTAINER -->
+    <script src="./javascript/left-side-container.js"></script>
+
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT FOR ALL HOME CAROUSEL/SLIDER  -->
+    <script src="/javascript/home-carousels.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT FOR CREATING (LATEST MOBILE POSTS, LATEST NEWS POSTS, BRANDS POSTS)  ONLY IN HOME PAGE  -->
+    <script src="/javascript/create-post-home.js"></script>
+
+
+</body>
+
+</html>

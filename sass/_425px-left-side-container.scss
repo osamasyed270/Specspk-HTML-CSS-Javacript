@@ -1,0 +1,24 @@
+.main-container {
+    .left-side-container {
+        .ratings-container {
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .rankings {
+                margin: 10px 0 0 0;
+                width: 172px;
+
+                .ranking-title {
+                    height: auto;
+                    line-height: inherit;
+                    padding: 5px 0 5px 5px ;
+                }
+            }
+        }
+    }
+    .page-details {
+        width: 100%;
+        flex-grow: inherit;
+        margin: auto;
+    }
+}
